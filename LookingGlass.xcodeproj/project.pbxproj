@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031E934A2B8192C100A59783 /* PhysicalDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031E93492B8192C100A59783 /* PhysicalDisplay.swift */; };
+		035E64512B7919EE00FA2BBD /* DisplayConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64502B7919EE00FA2BBD /* DisplayConfigurationView.swift */; };
+		035E64532B797DC500FA2BBD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64522B797DC500FA2BBD /* Model.swift */; };
+		035E64552B797E1700FA2BBD /* VirtualDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64542B797E1700FA2BBD /* VirtualDisplayManager.swift */; };
+		035E64572B79BAE700FA2BBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64562B79BAE600FA2BBD /* SettingsView.swift */; };
+		03C5A5DE2B79128D00072989 /* VirtualDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */; };
+		03C7E8CA2B81A78F00480223 /* GlassConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C7E8C92B81A78F00480223 /* GlassConfigView.swift */; };
+		03E09F152B705C0100F55997 /* LookingGlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F142B705C0100F55997 /* LookingGlassApp.swift */; };
+		03E09F192B705C0600F55997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E09F182B705C0600F55997 /* Assets.xcassets */; };
+		03E09F1C2B705C0600F55997 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E09F1B2B705C0600F55997 /* Preview Assets.xcassets */; };
+		03E09F2A2B70860D00F55997 /* CoreDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E09F282B7084AF00F55997 /* CoreDisplay.framework */; };
+		03E09F2B2B70860D00F55997 /* CoreDisplay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03E09F282B7084AF00F55997 /* CoreDisplay.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03E09F2C2B70860D00F55997 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03E09F2B2B70860D00F55997 /* CoreDisplay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		031E93492B8192C100A59783 /* PhysicalDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalDisplay.swift; sourceTree = "<group>"; };
+		035E64502B7919EE00FA2BBD /* DisplayConfigurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayConfigurationView.swift; sourceTree = "<group>"; };
+		035E64522B797DC500FA2BBD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		035E64542B797E1700FA2BBD /* VirtualDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualDisplayManager.swift; sourceTree = "<group>"; };
+		035E64562B79BAE600FA2BBD /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		035E64582B79CB1800FA2BBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualDisplayView.swift; sourceTree = "<group>"; };
+		03C7E8C92B81A78F00480223 /* GlassConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassConfigView.swift; sourceTree = "<group>"; };
+		03E09F112B705C0100F55997 /* LookingGlass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookingGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E09F142B705C0100F55997 /* LookingGlassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingGlassApp.swift; sourceTree = "<group>"; };
+		03E09F182B705C0600F55997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03E09F1B2B705C0600F55997 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03E09F1D2B705C0600F55997 /* LookingGlass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LookingGlass.entitlements; sourceTree = "<group>"; };
+		03E09F242B7070A000F55997 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03E09F282B7084AF00F55997 /* CoreDisplay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreDisplay.framework; path = ../../../../../System/Library/Frameworks/CoreDisplay.framework; sourceTree = "<group>"; };
+		03E09F2F2B71AC8C00F55997 /* CGVirtualDisplayPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGVirtualDisplayPrivate.h; sourceTree = "<group>"; };
+		03E09F302B71ACB000F55997 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E09F0E2B705C0100F55997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E09F2A2B70860D00F55997 /* CoreDisplay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E09F082B705C0100F55997 = {
+			isa = PBXGroup;
+			children = (
+				035E64582B79CB1800FA2BBD /* README.md */,
+				03E09F132B705C0100F55997 /* LookingGlass */,
+				03E09F122B705C0100F55997 /* Products */,
+				03E09F232B7070A000F55997 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03E09F122B705C0100F55997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E09F112B705C0100F55997 /* LookingGlass.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E09F132B705C0100F55997 /* LookingGlass */ = {
+			isa = PBXGroup;
+			children = (
+				03E09F2F2B71AC8C00F55997 /* CGVirtualDisplayPrivate.h */,
+				031E93492B8192C100A59783 /* PhysicalDisplay.swift */,
+				03E09F302B71ACB000F55997 /* Bridging-Header.h */,
+				03E09F142B705C0100F55997 /* LookingGlassApp.swift */,
+				03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */,
+				035E64542B797E1700FA2BBD /* VirtualDisplayManager.swift */,
+				035E64502B7919EE00FA2BBD /* DisplayConfigurationView.swift */,
+				03C7E8C92B81A78F00480223 /* GlassConfigView.swift */,
+				035E64562B79BAE600FA2BBD /* SettingsView.swift */,
+				035E64522B797DC500FA2BBD /* Model.swift */,
+				03E09F182B705C0600F55997 /* Assets.xcassets */,
+				03E09F1D2B705C0600F55997 /* LookingGlass.entitlements */,
+				03E09F1A2B705C0600F55997 /* Preview Content */,
+			);
+			path = LookingGlass;
+			sourceTree = "<group>";
+		};
+		03E09F1A2B705C0600F55997 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03E09F1B2B705C0600F55997 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03E09F232B7070A000F55997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03E09F282B7084AF00F55997 /* CoreDisplay.framework */,
+				03E09F242B7070A000F55997 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E09F102B705C0100F55997 /* LookingGlass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E09F202B705C0600F55997 /* Build configuration list for PBXNativeTarget "LookingGlass" */;
+			buildPhases = (
+				03E09F0D2B705C0100F55997 /* Sources */,
+				03E09F0E2B705C0100F55997 /* Frameworks */,
+				03E09F0F2B705C0100F55997 /* Resources */,
+				03E09F2C2B70860D00F55997 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LookingGlass;
+			productName = LookingGlass;
+			productReference = 03E09F112B705C0100F55997 /* LookingGlass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E09F092B705C0100F55997 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					03E09F102B705C0100F55997 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 03E09F0C2B705C0100F55997 /* Build configuration list for PBXProject "LookingGlass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03E09F082B705C0100F55997;
+			productRefGroup = 03E09F122B705C0100F55997 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E09F102B705C0100F55997 /* LookingGlass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03E09F0F2B705C0100F55997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E09F1C2B705C0600F55997 /* Preview Assets.xcassets in Resources */,
+				03E09F192B705C0600F55997 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E09F0D2B705C0100F55997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C5A5DE2B79128D00072989 /* VirtualDisplayView.swift in Sources */,
+				035E64512B7919EE00FA2BBD /* DisplayConfigurationView.swift in Sources */,
+				03E09F152B705C0100F55997 /* LookingGlassApp.swift in Sources */,
+				03C7E8CA2B81A78F00480223 /* GlassConfigView.swift in Sources */,
+				035E64572B79BAE700FA2BBD /* SettingsView.swift in Sources */,
+				035E64532B797DC500FA2BBD /* Model.swift in Sources */,
+				031E934A2B8192C100A59783 /* PhysicalDisplay.swift in Sources */,
+				035E64552B797E1700FA2BBD /* VirtualDisplayManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03E09F1E2B705C0600F55997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03E09F1F2B705C0600F55997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		03E09F212B705C0600F55997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LookingGlass/LookingGlass.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LookingGlass/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pgim.LookingGlass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LookingGlass/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		03E09F222B705C0600F55997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LookingGlass/LookingGlass.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LookingGlass/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pgim.LookingGlass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LookingGlass/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E09F0C2B705C0100F55997 /* Build configuration list for PBXProject "LookingGlass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E09F1E2B705C0600F55997 /* Debug */,
+				03E09F1F2B705C0600F55997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E09F202B705C0600F55997 /* Build configuration list for PBXNativeTarget "LookingGlass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E09F212B705C0600F55997 /* Debug */,
+				03E09F222B705C0600F55997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03E09F092B705C0100F55997 /* Project object */;
+}
