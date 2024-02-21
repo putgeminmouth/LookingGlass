@@ -13,7 +13,8 @@
 		035E64552B797E1700FA2BBD /* VirtualDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64542B797E1700FA2BBD /* VirtualDisplayManager.swift */; };
 		035E64572B79BAE700FA2BBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64562B79BAE600FA2BBD /* SettingsView.swift */; };
 		03622CED2B857C490006A617 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03622CEC2B857C490006A617 /* AboutView.swift */; };
-		03622CEF2B85986A0006A617 /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 03622CEE2B85986A0006A617 /* docs */; };
+		03622CF12B8634370006A617 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 03622CF02B8634360006A617 /* build.sh */; };
+		03622CF42B86C81A0006A617 /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 03622CF32B86C81A0006A617 /* docs */; };
 		03C5A5DE2B79128D00072989 /* VirtualDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */; };
 		03C7E8CA2B81A78F00480223 /* GlassConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C7E8C92B81A78F00480223 /* GlassConfigView.swift */; };
 		03E09F152B705C0100F55997 /* LookingGlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F142B705C0100F55997 /* LookingGlassApp.swift */; };
@@ -45,10 +46,12 @@
 		035E64562B79BAE600FA2BBD /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		035E64582B79CB1800FA2BBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		03622CEC2B857C490006A617 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		03622CEE2B85986A0006A617 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = docs; path = LookingGlass/docs; sourceTree = "<group>"; };
+		03622CF02B8634360006A617 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		03622CF22B86347B0006A617 /* LookingGlassDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LookingGlassDebug.entitlements; sourceTree = "<group>"; };
+		03622CF32B86C81A0006A617 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 		03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualDisplayView.swift; sourceTree = "<group>"; };
 		03C7E8C92B81A78F00480223 /* GlassConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassConfigView.swift; sourceTree = "<group>"; };
-		03E09F112B705C0100F55997 /* LookingGlass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookingGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E09F112B705C0100F55997 /* LookingGlassVDM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookingGlassVDM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E09F142B705C0100F55997 /* LookingGlassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingGlassApp.swift; sourceTree = "<group>"; };
 		03E09F182B705C0600F55997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03E09F1B2B705C0600F55997 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -74,8 +77,9 @@
 		03E09F082B705C0100F55997 = {
 			isa = PBXGroup;
 			children = (
+				03622CF32B86C81A0006A617 /* docs */,
 				035E64582B79CB1800FA2BBD /* README.md */,
-				03622CEE2B85986A0006A617 /* docs */,
+				03622CF02B8634360006A617 /* build.sh */,
 				03E09F132B705C0100F55997 /* LookingGlass */,
 				03E09F122B705C0100F55997 /* Products */,
 				03E09F232B7070A000F55997 /* Frameworks */,
@@ -85,7 +89,7 @@
 		03E09F122B705C0100F55997 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03E09F112B705C0100F55997 /* LookingGlass.app */,
+				03E09F112B705C0100F55997 /* LookingGlassVDM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +97,7 @@
 		03E09F132B705C0100F55997 /* LookingGlass */ = {
 			isa = PBXGroup;
 			children = (
+				03622CF22B86347B0006A617 /* LookingGlassDebug.entitlements */,
 				03E09F2F2B71AC8C00F55997 /* CGVirtualDisplayPrivate.h */,
 				031E93492B8192C100A59783 /* PhysicalDisplay.swift */,
 				03E09F302B71ACB000F55997 /* Bridging-Header.h */,
@@ -131,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03E09F102B705C0100F55997 /* LookingGlass */ = {
+		03E09F102B705C0100F55997 /* LookingGlassVDM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03E09F202B705C0600F55997 /* Build configuration list for PBXNativeTarget "LookingGlass" */;
+			buildConfigurationList = 03E09F202B705C0600F55997 /* Build configuration list for PBXNativeTarget "LookingGlassVDM" */;
 			buildPhases = (
 				03E09F0D2B705C0100F55997 /* Sources */,
 				03E09F0E2B705C0100F55997 /* Frameworks */,
@@ -144,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = LookingGlass;
+			name = LookingGlassVDM;
 			productName = LookingGlass;
-			productReference = 03E09F112B705C0100F55997 /* LookingGlass.app */;
+			productReference = 03E09F112B705C0100F55997 /* LookingGlassVDM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 03E09F0C2B705C0100F55997 /* Build configuration list for PBXProject "LookingGlass" */;
+			buildConfigurationList = 03E09F0C2B705C0100F55997 /* Build configuration list for PBXProject "LookingGlassVDM" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -177,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03E09F102B705C0100F55997 /* LookingGlass */,
+				03E09F102B705C0100F55997 /* LookingGlassVDM */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03622CEF2B85986A0006A617 /* docs in Resources */,
+				03622CF12B8634370006A617 /* build.sh in Resources */,
+				03622CF42B86C81A0006A617 /* docs in Resources */,
 				03E09F1C2B705C0600F55997 /* Preview Assets.xcassets in Resources */,
 				03E09F192B705C0600F55997 /* Assets.xcassets in Resources */,
 			);
@@ -249,6 +255,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -312,7 +319,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -340,12 +348,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = LookingGlass/LookingGlass.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LookingGlass/LookingGlassDebug.entitlements;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"LookingGlass/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -372,11 +379,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LookingGlass/LookingGlass.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_ASSET_PATHS = "\"LookingGlass/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -400,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03E09F0C2B705C0100F55997 /* Build configuration list for PBXProject "LookingGlass" */ = {
+		03E09F0C2B705C0100F55997 /* Build configuration list for PBXProject "LookingGlassVDM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03E09F1E2B705C0600F55997 /* Debug */,
@@ -409,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03E09F202B705C0600F55997 /* Build configuration list for PBXNativeTarget "LookingGlass" */ = {
+		03E09F202B705C0600F55997 /* Build configuration list for PBXNativeTarget "LookingGlassVDM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03E09F212B705C0600F55997 /* Debug */,
