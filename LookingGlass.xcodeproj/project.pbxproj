@@ -12,6 +12,8 @@
 		035E64532B797DC500FA2BBD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64522B797DC500FA2BBD /* Model.swift */; };
 		035E64552B797E1700FA2BBD /* VirtualDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64542B797E1700FA2BBD /* VirtualDisplayManager.swift */; };
 		035E64572B79BAE700FA2BBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E64562B79BAE600FA2BBD /* SettingsView.swift */; };
+		03622CED2B857C490006A617 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03622CEC2B857C490006A617 /* AboutView.swift */; };
+		03622CEF2B85986A0006A617 /* docs in Resources */ = {isa = PBXBuildFile; fileRef = 03622CEE2B85986A0006A617 /* docs */; };
 		03C5A5DE2B79128D00072989 /* VirtualDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */; };
 		03C7E8CA2B81A78F00480223 /* GlassConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C7E8C92B81A78F00480223 /* GlassConfigView.swift */; };
 		03E09F152B705C0100F55997 /* LookingGlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F142B705C0100F55997 /* LookingGlassApp.swift */; };
@@ -42,6 +44,8 @@
 		035E64542B797E1700FA2BBD /* VirtualDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualDisplayManager.swift; sourceTree = "<group>"; };
 		035E64562B79BAE600FA2BBD /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		035E64582B79CB1800FA2BBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		03622CEC2B857C490006A617 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		03622CEE2B85986A0006A617 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = docs; path = LookingGlass/docs; sourceTree = "<group>"; };
 		03C5A5DD2B79128D00072989 /* VirtualDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualDisplayView.swift; sourceTree = "<group>"; };
 		03C7E8C92B81A78F00480223 /* GlassConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassConfigView.swift; sourceTree = "<group>"; };
 		03E09F112B705C0100F55997 /* LookingGlass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookingGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				035E64582B79CB1800FA2BBD /* README.md */,
+				03622CEE2B85986A0006A617 /* docs */,
 				03E09F132B705C0100F55997 /* LookingGlass */,
 				03E09F122B705C0100F55997 /* Products */,
 				03E09F232B7070A000F55997 /* Frameworks */,
@@ -101,6 +106,7 @@
 				03E09F182B705C0600F55997 /* Assets.xcassets */,
 				03E09F1D2B705C0600F55997 /* LookingGlass.entitlements */,
 				03E09F1A2B705C0600F55997 /* Preview Content */,
+				03622CEC2B857C490006A617 /* AboutView.swift */,
 			);
 			path = LookingGlass;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03622CEF2B85986A0006A617 /* docs in Resources */,
 				03E09F1C2B705C0600F55997 /* Preview Assets.xcassets in Resources */,
 				03E09F192B705C0600F55997 /* Assets.xcassets in Resources */,
 			);
@@ -197,6 +204,7 @@
 				035E64512B7919EE00FA2BBD /* DisplayConfigurationView.swift in Sources */,
 				03E09F152B705C0100F55997 /* LookingGlassApp.swift in Sources */,
 				03C7E8CA2B81A78F00480223 /* GlassConfigView.swift in Sources */,
+				03622CED2B857C490006A617 /* AboutView.swift in Sources */,
 				035E64572B79BAE700FA2BBD /* SettingsView.swift in Sources */,
 				035E64532B797DC500FA2BBD /* Model.swift in Sources */,
 				031E934A2B8192C100A59783 /* PhysicalDisplay.swift in Sources */,

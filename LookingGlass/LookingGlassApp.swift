@@ -34,6 +34,7 @@ extension AppSettings: RawRepresentable {
 @main
 struct LookingGlassApp: App {
     @State var virtualDisplayRegistry = VirtualDisplayRegistry()
+    @State var aboutBoxWindowController: NSWindowController?
 
     @AppStorage("settings") var settings = AppSettings()
     
@@ -48,6 +49,30 @@ struct LookingGlassApp: App {
                 automaticUnregisterEnabled: $automaticUnregisterEnabled,
                 automaticUnregisterDelayInSeconds: $automaticUnregisterDelayInSeconds
             )
+        }
+        .commands {
+            CommandGroup(replacing: CommandGroupPlacement .appInfo) {
+                Button("About LookingGlass") {
+                    if aboutBoxWindowController == nil {
+                        let styleMask: NSWindow.StyleMask = [.closable, .miniaturizable,/* .resizable,*/ .titled]
+                        let window = NSWindow()
+                        window.styleMask = styleMask
+                        window.title = "About: LookingGlass"
+                        window.contentView = NSHostingView(rootView: AboutView())
+                        aboutBoxWindowController = NSWindowController(window: window)
+                    }
+
+                    aboutBoxWindowController?.showWindow(aboutBoxWindowController?.window)
+                    aboutBoxWindowController?.window?.orderFrontRegardless()
+                    aboutBoxWindowController?.window?.center()
+                }
+            }
+            CommandGroup(replacing: .newItem) {}
+            CommandGroup(replacing: .help) {
+                Button("Help") {
+                    NSWorkspace.shared.open(URL(string: "https://github.com/putgeminmouth/LookingGlass")!)
+                }
+            }
         }
         Settings {
             SettingsView(
