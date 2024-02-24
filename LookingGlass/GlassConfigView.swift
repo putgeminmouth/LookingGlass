@@ -320,6 +320,12 @@ struct GlassConfigView: View {
                     Button("Cancel", role: .cancel) {
                     }
                 }
+                .onReceive(NotificationCenter.default.publisher(for: NSWindow.willCloseNotification, object: virtualDisplayRegistry.find(glass.id)?.window)) { notif in
+                    glass.active = false
+                    if let registration = virtualDisplayRegistry.find(glass.id) {
+                        cleanupRegisteredStream(glassId: glass.id, registration: registration)
+                    }
+                }
         }
     }
 }
